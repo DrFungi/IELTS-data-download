@@ -1,0 +1,24 @@
+selenium_project/
+│─── 📁 drivers/             # WebDriver management (optional)
+│     ├── driver_manager.py  # Handles WebDriver initialization
+│
+│─── 📁 pages/               # Page classes (POM)
+│     ├── base_page.py       # Base class for all pages
+│     ├── login_page.py      # Login page class
+│     ├── download_page.py   # Download page class
+│
+│─── 📁 tests/               # Test scripts
+│     ├── test_download.py   # Logic for downloading files
+│     ├── test_login.py      # Login test
+│
+│─── 📁 utils/               # Utility functions
+│     ├── config.py          # Configuration (URLs, file paths)
+│     ├── helpers.py         # Helper functions (date logic, file handling)
+│
+│─── 📁 reports/             # Test reports & logs (optional)
+│
+│─── 📁 data/                # Test data (optional)
+│
+│─── .gitignore              # Ignore unnecessary files
+│─── requirements.txt        # Python dependencies
+│─── README.md               # Project documentation

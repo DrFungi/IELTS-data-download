@@ -1,0 +1,26 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+.venv/
+env/
+
+# Ignore password file
+env.py
+
+# Ignore chromedriver.exe
+chromedriver.exe
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore test reports/logs
+logs/
+*.log
+
+# Ignore PyCharm files
+.idea/
+

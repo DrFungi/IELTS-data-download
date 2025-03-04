@@ -1,0 +1,702 @@
+<body data-base-url="https://results-service.ielts.org" data-auth-url="https://ielts-id.eu.auth0.com/authorize" data-logout-url="https://ielts-id.eu.auth0.com/v2/logout" data-client-id="EW6n8LF75WQrqGT4Mc1Hd5BWO1gDX0TF" data-audience="api name. Not used" data-start-url="https://results-service-api.ielts.org/start.json" data-crmapi-banner="1" data-crmapi-footer1="true" data-crmapi-footer2="true" data-debug="false" data-console-log="false" data-training="false" data-maintenance="false" data-maintenance-url="/maintenance" data-terms="true" data-terms-url="/terms-and-conditions" data-terms-version="3" data-support-form-url="https://cambridgeenglish.formstack.com/forms/ielts_results_service_support_request" data-beta-logo="false" data-feedback="false" data-restricted-language-set="true" data-email-from="no-reply@results-service.ielts.org" data-integrations="false" data-refresh-interval="150" data-max-record-page="10" data-base-schema-url="https://results-service-api.ielts.org" data-results-service-api-form="https://cambridgeenglish.formstack.com/forms/ielts_results_service_api_application" data-global-ro-profile-form-url="https://cambridgeenglish.formstack.com/forms/details_update" data-global-ro-profile-feedback-form-url="https://cambridgeenglish.formstack.com/forms/ielts_results_service_feedback" data-global-ga4-id="G-S7QTM6SG16" data-global-gtm-id="GTM-5HM5RF3" data-global-login-redirect="undefined" data-global-onetrust-id="5cc2c6ea-7f57-4abf-9173-658259005ae2" ,="" data-global-timeout-interval="900000" data-view="downloadhistory" data-language="en-gb">
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HM5RF3"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div id="loader" style="display: none;">
+            <div></div>
+        </div>
+
+            <section id="features" data-notification-schedule="false" data-maintenance="true" data-terms="true" data-resultssearch-times="false">
+            </section>
+
+
+        <!--[if lt IE 9]>
+        <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+        <![endif]-->
+        <noscript>
+            <p class="browserupgrade">You are browsing with JavaScript disabled. Please enable JavaScript and refresh the page to use this site.</p>
+        </noscript>
+
+        <header>
+            <div class="h1">
+                <div class="brand" alt="IELTS Results Service">
+                    Link to home page
+                </div>
+
+                <div class="centre">
+                    <div class="user">
+                        <span class="welcome">Welcome, </span>
+                        <span class="userName">david.villegas</span>
+
+                        <a href="/" data-action="logout.click" class="hidden logout">
+                            <span id="arrow">►</span>
+                            <span id="text">Logout</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <span id="notifications" class="material-icons" data-action="notifications.click">notifications_active</span>
+                    <results-service-feedback class="button" data-tip="How could we improve?" dialog-title="Send Feedback" schema-url="https://results-service-api.ielts.org/api/feedback/$schema-create"><a href="#" data-action="feedback.click" class="button">Send Feedback</a></results-service-feedback>
+                </div>
+            </div>        </header>
+
+        <section id="terms-container"><div id="terms" class="terms" style="display:none" data-mode="2">
+            <div class="outer">
+                <div class="inner">
+                    <div class="title">
+                        <span>IELTS Results Service<br>Terms of Use, Data Protection and Privacy Statement</span>
+                    </div>
+
+                    <div class="body">
+
+
+<meta charset="UTF-8">
+<title>Title</title>
+<style type="text/css">
+.para-t-and-c {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.terms-and-conds {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 9pt;
+}
+.div-table {
+    display: table;
+    margin: 0px;
+    width: 100%;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background-color: rgba(230, 233, 236);
+    text-align: top;
+}
+.div-table-row {
+    display: table-row;
+}
+.div-head-row {
+    display: table-header-group;
+    font-weight: bold;
+}
+.div-head-col {
+    display: table-cell;
+    padding: 5px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+.div-table-col {
+    display: table-cell;
+    border-right: 2px solid white;
+    padding: 5px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+</style>
+
+
+    <div class="div-table">
+        <div class="div-head-row">
+            <div class="div-head-col">
+                Version
+            </div>
+            <div class="div-head-col">
+                What’s changed?
+            </div>
+        </div>
+        <div class="div-table-row">
+                <div class="div-table-col" style="text-align:center">
+                    2
+                </div>
+                <div class="div-table-col">
+                    Section 1 – Provision of Service: New paragraph added to make it clearer that these terms of use also
+                    include third-party software.<br><br>
+                    Section 9 – Data Protection and Privacy Statement: 9.4 added to make it clearer that the only third
+                    parties we will disclose data to are your software systems, unless we are legally required to do
+                    otherwise.
+                </div>
+        </div>
+        <div class="div-table-row">
+            <div class="div-table-col" style="text-align:center">
+                3
+            </div>
+            <div class="div-table-col">
+                Section 3.5 – Security obligations<br><br>
+                Section 3.6 – Changes to third-party systems<br><br>
+                Section 8.a – Corrected incorrect legislation<br><br>
+                Section 9.b – Data Controller statement
+            </div>
+        </div>
+        <div class="div-table-row">
+            <div class="div-table-col" style="text-align:center">
+                4
+            </div>
+            <div class="div-table-col">
+                Changes of entity names: UCLES to Cambridge; Cambridge Assessment English to Cambridge English
+            </div>
+        </div>
+    </div>
+<p class="para-t-and-c">
+    <span class="terms-and-conds">
+        The Chancellor, Masters and Scholars of the University of Cambridge
+        acting through its department Cambridge University Press &amp; Assessment is responsible for providing examinations
+        and tests for learners and teachers of English language. “<strong>Cambridge English</strong>”
+        is an operating name for the division of Cambridge which operates International English Language Testing System
+        (“<strong>IELTS</strong>”) with the British Council and IELTS Australia Pty Ltd (solely owned by IDP Education Pty Ltd).
+    </span>
+</p>
+<p class="para-t-and-c">
+    <span class="terms-and-conds">
+        The Results Service at <a href="http://results-service.ielts.org/">results-service.ielts.org</a>
+        (the “<strong>Service</strong>”) has been set up to enable organisations which recognise IELTS
+        (“<strong>Recognising Organisations</strong>”) to receive IELTS test results and/or to verify the validity of the Test Report Form which may be presented to them
+        (the “<strong>Purpose</strong>”). An authorised user (“<strong>Users</strong>”, also
+        referred to as “<strong>You</strong>”/“<strong>you</strong>”) is any employee of a Recognising Organisation authorised to
+        act and acting for and on behalf of such Recognising Organisation, to which Cambridge English grants access to the Service at its sole discretion.
+        Your use of the Service is governed by these Terms of Use (the “<strong>Terms of Use</strong>”),
+        and by entering and using the Service you confirm that you consent to these Terms of Use.
+    </span>
+</p>
+<p class="para-t-and-c">
+    <span class="terms-and-conds"><strong>
+        Where you are using the Service as part of your duties of employment,
+        by continuing you confirm that you are authorised to agree to these Terms of Use on behalf
+        of your employer and that you agree to be bound by them. If you are not authorised to use the Service,
+        you should exit the site and not continue.
+    </strong></span>
+</p>
+<p class="para-t-and-c">
+    <span class="terms-and-conds">
+        You may print and keep a copy of these Terms of Use from
+        <a href="https://ielts.org/legal/ielts-results-service-terms-and-conditions" target="_blank">https://ielts.org/legal/ielts-results-service-terms-and-conditions</a>.
+        The Terms of Use are a legal agreement between us and can only be modified with Cambridge English’s prior written consent. Cambridge English
+        reserves the right to change the Terms of Use at its discretion by changing them here and on <a href="https://ielts.org/legal/ielts-results-service-terms-and-conditions" target="_blank">https://ielts.org/legal/ielts-results-service-terms-and-conditions</a>.
+    </span>
+</p>
+<ol>
+    <li class="terms-and-conds">
+        <span class="terms-and-conds"><strong>Provision of service</strong></span>
+        <p class="para-t-and-c">
+            <span class="terms-and-conds">
+                The Recognising Organisation’s use of the Service constitutes its consent to be
+                bound by these Terms of Use. The Service includes Cambridge’s website for the Service
+                and any related software products or web-based products including other third party software that may be incorporated therein.
+            </span>
+        </p>
+        <p class="para-t-and-c">
+            <span class="terms-and-conds">
+                At its discretion Cambridge hereby grants the Recognising Organisation a non-exclusive,
+                non-transferable, royalty-free limited licence to use the Service for the Purpose.
+                All right, title, interest, and ownership in the Service shall at all times remain solely with Cambridge.
+            </span>
+        </p>
+    </li>
+    <li class="terms-and-conds">
+        <span class="terms-and-conds"><strong>Accuracy of information and disclaimer</strong></span>
+        <ol>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        Cambridge English warrants that the candidate test results information provided through the Service
+                        is an accurate copy of the records held by Cambridge English on candidate test results. Results data on this site is updated daily.
+                        If you are unable to find the result for a particular candidate, please ask the candidate to supply you with a copy of their Test Report Form.
+                        Once received you should be able to check the validity of the result by entering the Test Report Form number into the site.
+                        If, following this, you are still unable to confirm the validity of the result, you will be provided with contact details for IELTS administration who will investigate the matter further and inform you of the outcome.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        IELTS results are intended to be one of many factors used by Recognising Organisations in determining whether a
+                        candidate has sufficient English skills to successfully be admitted as a student or be considered for employment.
+                        Cambridge English and other parties involved in creating, producing or delivering IELTS shall not be liable for any direct or
+                        indirect loss or damage arising out of access to, use of, acceptance by, or interpretation of a candidate’s results by a recognising organisation.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        All other warranties, undertakings conditions and terms, express or implied, whether by
+                        common law, statute, custom, trade usage, course of dealings or otherwise (including without limitation as to quality,
+                        fitness for purpose, performance or suitability for purpose) in respect of the service are hereby excluded to the fullest extent permitted by law.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        You acknowledge and agree that Cambridge English’s liability to the Recognising Organisation for direct loss arising out of or in
+                        connection with your use of the service shall be limited to the greater of £1,000 (one thousand pounds sterling) or the amount paid by you to
+                        Cambridge English within the preceding 12 months for any one incident or series of incidents.
+                        Cambridge English shall, however, in no circumstances be liable to you under or in connection with your use of the service for any indirect, economic or consequential loss whatsoever;
+                        loss of revenue; loss of profits; loss of business; loss of goodwill or reputation; loss of use; any deletion, corruption, destruction, loss or removal of data or any professional charges.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        Nothing in these Terms of Use shall exclude Cambridge English’s liability to you for
+                        fraudulent misrepresentation or for death or personal injury resulting from Cambridge English’s negligence or that of its employees.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        You acknowledge and agree that Cambridge English cannot guarantee that the Service
+                        will always be available to you, owing to the nature of the internet.
+                        In addition, you acknowledge and agree that the Service may be unavailable from time to time owing to maintenance.
+                    </span>
+                </p>
+            </li>
+        </ol>
+    </li>
+    <li class="terms-and-conds">
+        <span class="terms-and-conds"><strong>Code of conduct</strong></span>
+        <ol>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        If we grant you administrator rights to create, manage and delete new User accounts at your
+                        IELTS Recognising Organisation, you agree to monitor the Users within your IELTS Recognising Organisation and
+                        delete User accounts when Users have left the Recognising Organisation or no longer require access to the Service for the Purpose.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        You agree not to use the Service for any purpose other than the Purpose (or, if you have administrator rights, additionally to set up and manage User accounts)
+                        and in particular not to disclose any confidential candidate test details or other confidential information which you have knowledge of through
+                        your use of the Service to any person except as required in relation to the Purpose.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        Cambridge English reserves the right to prevent access to the Service by you without notice and at its sole discretion.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        If accessing any part of the Service you agree:
+                    </span>
+                </p>
+                <ol type="a">
+                    <li class="terms-and-conds">
+                        <p class="para-t-and-c">
+                            <span class="terms-and-conds">
+                                to ensure that any details which you supply to us through the Service are accurate and
+                                to let us know promptly if any of the details which you have supplied to us about you change;
+                            </span>
+                        </p>
+                    </li>
+                    <li class="terms-and-conds">
+                        <p class="para-t-and-c">
+                            <span class="terms-and-conds">
+                                to keep your username and password for access to the Service confidential,
+                                and to be responsible for any loss or damage resulting from use of your username and password by any third party;
+                            </span>
+                        </p>
+                    </li>
+                    <li class="terms-and-conds">
+                        <p class="para-t-and-c">
+                            <span class="terms-and-conds">
+                                not to use the Service in such a way that disrupts,
+                                interferes with or restricts the use of the Service by other third-party Users;
+                            </span>
+                        </p>
+                    </li>
+                    <li class="terms-and-conds">
+                        <p class="para-t-and-c">
+                            <span class="terms-and-conds">
+                                to ensure that any materials uploaded, displayed or transmitted by
+                                you through or to the Service are not false, offensive, defamatory, threatening, obscene, unlawful and
+                                do not breach or infringe the rights of any person anywhere in the world and you waive any moral rights in respect of any such materials;
+                            </span>
+                        </p>
+                    </li>
+                    <li class="terms-and-conds">
+                        <p class="para-t-and-c">
+                            <span class="terms-and-conds">
+                                not to reverse engineer, decompile, copy or adapt any software or other code or scripts forming part
+                                of the Service nor attempt to transmit to or via the Service any information that contains a virus,
+                                worm, trojan horse, or other harmful or disruptive component;
+                            </span>
+                        </p>
+                    </li>
+                    <li class="terms-and-conds">
+                        <p class="para-t-and-c">
+                            <span class="terms-and-conds">
+                                not to send 'spam' email or any unsolicited correspondence to any addresses made available on the Service;
+                            </span>
+                        </p>
+                    </li>
+                    <li class="terms-and-conds">
+                        <p class="para-t-and-c">
+                            <span class="terms-and-conds">
+                                not to change, modify, delete, interfere with or misuse data contained on the
+                                Service entered by or relating to any third-party User of the Service; and
+                            </span>
+                        </p>
+                    </li>
+                    <li class="terms-and-conds">
+                        <p class="para-t-and-c">
+                            <span class="terms-and-conds">
+                                to follow any reasonable instructions that may be provided through the Service in
+                                relation to the use of the Service and/or the interpretation of the information (or lack of information) obtained from it.
+                            </span>
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        You shall satisfy yourself that the security of the data provided to you
+                        through the Service is sufficient to meet the requirements set down within the
+                        UK Data Protection Act 2018, General Data Protection Regulation (EU) 2016/679 (“<strong>GDPR</strong>”),
+                        howsoever received. This obligation extends to data held by you on internally-hosted systems
+                        and/or third-party hosted systems which you use or to which you have access.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        You shall ensure that you notify Cambridge English of any changes to
+                        third-party systems which receive data through the Service before permitting them to access or otherwise use the data.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        You shall not intentionally or negligently lose, alter, misuse or otherwise
+                        compromise in any way the Service, the information made available through the Service or the password supplied to you.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        You should satisfy yourself that you have appropriate protection against
+                        computer viruses, worms, trojan horses or other items of a harmful or destructive nature whilst using the internet,
+                        and that your connection to the Service is secure.
+                    </span>
+                </p>
+            </li>
+        </ol>
+    </li>
+    <li class="terms-and-conds">
+        <span class="terms-and-conds"><strong>Links</strong></span>
+        <ol type="a">
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        The Service may include hypertext links to third party websites. Cambridge English accepts no responsibility for,
+                        and can give no warranties, guarantees or representations in respect of, the content or availability of material of any third-party site.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        You may not create any publicly available hypertext link to the Service without our consent.
+                    </span>
+                </p>
+            </li>
+        </ol>
+    </li>
+    <li class="terms-and-conds">
+        <span class="terms-and-conds"><strong>Copyright and intellectual property</strong></span>
+        <ol type="a">
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        The copyright and other intellectual property in material contained in the Service, including without limitation in
+                        text, images, scripts and sounds, is owned by Cambridge except where otherwise stated. © Cambridge
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        You may print extracts from the Service or any of its pages for the Purpose only.
+                        Any extract printed becomes the responsibility of the Recognising Organisation which has printed it,
+                        in particular in relation to data protection and privacy requirements.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        All other rights are reserved.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        “Cambridge” is a registered trademark of the University of Cambridge in the UK and in other countries.
+                        IELTS is a globally registered trademark of Cambridge, the British Council and IELTS Australia Pty Ltd (solely owned by IDP Education Pty Ltd).
+                    </span>
+                </p>
+            </li>
+        </ol>
+    </li>
+    <li class="terms-and-conds">
+        <span class="terms-and-conds"><strong>Other agreements</strong></span>
+        <ol type="a">
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        In the case of any conflict between these Terms of Use and any other agreement which you have with Cambridge English,
+                        Cambridge or the University of Cambridge, the latter shall prevail.
+                        These Terms of Use shall not affect or override any of the statutes of the University of Cambridge.
+                    </span>
+                </p>
+            </li>
+        </ol>
+    </li>
+    <li class="terms-and-conds">
+        <span class="terms-and-conds"><strong>Contacting us</strong></span>
+        <ol type="a">
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        Cambridge English is based at Shaftesbury Road, Cambridge, CB2 8EA, United Kingdom and is a part of the University of Cambridge.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        If you have any queries about these Terms of Use you should contact us by emailing
+                        <a href="mailto:IELTSTRF@cambridgeenglish.org">IELTSTRF@cambridgeenglish.org</a>
+                    </span>
+                </p>
+            </li>
+        </ol>
+    </li>
+    <li class="terms-and-conds">
+        <span class="terms-and-conds"><strong>Governing law and jurisdiction</strong></span>
+        <ol type="a">
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        These Terms of Use shall be governed by and construed in accordance with the laws of the jurisdiction (country or state as applicable) in
+                        which the Recognising Organisation is located (the “<strong>Jurisdiction</strong>”), and venue for any legal actions involving the
+                        Recognising Organisation is to be in the Jurisdiction, and any alternative dispute resolution the Recognising Organisation is
+                        required to follow shall be used before either party resorts to filing a claim in the courts of the Jurisdiction.
+                    </span>
+                </p>
+            </li>
+        </ol>
+    </li>
+    <li class="terms-and-conds">
+        <span class="terms-and-conds"><strong>Data protection and privacy statement</strong></span>
+        <ol type="a">
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        Cambridge English offers and provides examination, assessment and related services.
+                        We are committed to protecting the privacy and confidentiality of information provided by Users who access the Service
+                        and we uphold the relevant data protection principles and process all personal data in accordance with the
+                        UK Data Protection Act 2018, General Data Protection Regulation (EU) 2016/679 (“<strong>GDPR</strong>”) and all associated national legislation dealing
+                        with the use and handling of personal information.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        The Recognising Organisation agrees that it is Data Controller, as defined in GDPR for data which
+                        is provided to it for the purposes of results verification, and for any additional uses which are made of this data.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        <strong>Processing of data</strong>
+                    </span>
+                </p>
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        In order for Users to access the Service and to gain the full benefits of the Service we need to collect and process various personal data.
+                        The personal data we collect is used to process your request for access to the Service and to provide the Service.
+                        We also keep records of those who use the Service so that we can contact Users and inform them of other
+                        Cambridge English or IELTS services that become available and which might be of interest to them.
+                        Users may opt out of receiving such contact by emailing us at
+                        <a href="mailto:IELTSTRF@cambridgeenglish.org">IELTSTRF@cambridgeenglish.org</a>
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        We may also need to contact you at times we need to divulge important information to your organisation.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        <strong>Disclosure of information to third parties</strong>
+                    </span>
+                </p>
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        We will not disclose Users’ information to any third parties,
+                        other than those software systems as used by the Recognising Organisations,
+                        unless we are required to do so by law or any court order, or the User consents to such disclosure.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        <strong>Cookies</strong>
+                    </span>
+                </p>
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        We use cookies as part of the Service. This enables us to personalise a User’s experience of the Service by recording details
+                        about use of the Service as a file on a User’s computer. Users may disable the use of cookies but this may limit the
+                        functionality of web pages on the Service, or your access to the Service.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        <strong>Security</strong>
+                    </span>
+                </p>
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        This Service and our computer systems have security measures in place with the aim of protecting the loss,
+                        misuse or alteration of the information Users provide to us.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        <strong>Modifying / removing your personal information</strong>
+                    </span>
+                </p>
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        Users may change their registered details in any way or request that their personal data is
+                        removed from our systems or request a copy of their personal data which we hold by emailing us at
+                        <a href="mailto:IELTSTRF@cambridgeenglish.org">IELTSTRF@cambridgeenglish.org</a>
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        <strong>Comments / questions</strong>
+                    </span>
+                </p>
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        Cambridge English is based at Shaftesbury Road, Cambridge CB2 8EA, United Kingdom and is a
+                        part of the University of Cambridge. Any comments or questions about this Data Protection and Privacy Statement
+                        may be sent to us by emailing <a href="mailto:IELTSTRF@cambridgeenglish.org">IELTSTRF@cambridgeenglish.org</a> or writing to
+                        us at the above address, marking the letter for the attention of IELTS Administration.
+                    </span>
+                </p>
+            </li>
+            <li class="terms-and-conds">
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        <strong>Changes to this statement</strong>
+                    </span>
+                </p>
+                <p class="para-t-and-c">
+                    <span class="terms-and-conds">
+                        We will notify Users of changes to this Data Protection and Privacy Statement by displaying them here and on
+                        <a href="https://ielts.org/legal/ielts-results-service-terms-and-conditions" target="_blank">https://ielts.org/legal/ielts-results-service-terms-and-conditions</a>.
+                    </span>
+                </p>
+            </li>
+        </ol>
+        </li></ol>
+
+
+<p class="para-t-and-c">
+    <span class="terms-and-conds">
+        Last updated 11 June 2024.
+    </span>
+</p>
+
+
+</div>
+
+                    <div class="footer">
+
+                                <a href="#" id="close" class="button right enabled" data-action="terms-close.click">Close</a>
+
+                    </div>
+                </div>
+            </div>
+        </div></section>
+
+        <section id="maintenance-container">
+        </section>
+
+        <section id="nav" class="login">
+        <ca-nav><nav><ul><li style="display: inline;"><a onclick="javascript:void(0)" data-action="loadCRUD.click|keydown" data-rel="downloadresults" data-href="https://results-service-api.ielts.org/api/organisation/$schema" tabindex="0">Home</a></li><li><a onclick="javascript:void(0)" data-action="loadCRUD.click|keydown" data-rel="trfsearch" data-href="https://results-service-api.ielts.org/api/organisation/trf/$schema" tabindex="0">Verification</a></li><li style="display: inline;"><a onclick="javascript:void(0)" data-action="loadCRUD.click|keydown" data-rel="downloads" data-href="https://results-service-api.ielts.org/api/tags/auto/organisation/1418/$schema" tabindex="0" data-selected="true">Download Results</a></li><li style="display: inline;"><a onclick="javascript:void(0)" data-action="loadCRUD.click|keydown" data-rel="downloadtemplates" data-href="https://results-service-api.ielts.org/api/templates/organisation/$schema" tabindex="0">Templates</a></li><li><a onclick="javascript:void(0)" data-action="loadCRUD.click|keydown" data-rel="roprofile" data-href="https://results-service-api.ielts.org/api/admin/ro/1418/profile/$schema" tabindex="0">My Organisation</a></li><li><a onclick="javascript:void(0)" data-action="loadCRUD.click|keydown" data-rel="users" data-href="https://results-service-api.ielts.org/api/admin/ro/1418/users/$schema" tabindex="0">Users</a></li><li><a onclick="javascript:void(0)" data-action="loadCRUD.click|keydown" data-rel="settings" data-href="https://results-service-api.ielts.org/api/settings/$schema" tabindex="0">Settings</a></li><li><a onclick="javascript:void(0)" data-action="loadCRUD.click|keydown" data-rel="faq" data-href="https://dev-results-service-api.ieltsfoliotest.org/api/dashboard/" tabindex="0">Help</a></li></ul></nav></ca-nav></section>
+
+        <main class="app-container">
+            <div class="app-admin">
+        <div class="result-search">
+            <div class="result-title">Results shared with my organisation</div>
+             <div class="newresult">
+               <div class="new-div">
+                    <div class="new-results text-style-1">
+                        <b class="new-count" style="color: rgb(220, 11, 34);">78</b> <span class="new-text" style="color: rgb(0, 0, 0);">New Result(s) </span>
+                    </div>
+                    <div class="download-button">
+                        <a class="downloadbuttonnew downloadbuttonnew-case " tabindex="0" href="https://results-service-api.ielts.org/api/organisation/1418/david.villegas/1740407619_7vNFPTbkS7JUV8EAr_0e0TgoBys=/download?format=&amp;templateId=e4a86d29-6153-499b-ac40-2c6aaf60ae5a&amp;noTag=false&amp;status=N&amp;emailId=" data-count-url="https://results-service-api.ielts.org/api/organisation/1418/download/info" target="_self" download="download" data-action="downloadNewCandidates.click|keydown">Download</a>
+                    </div>
+                    <div class="view-button">
+                        <a class="downloadbuttonnew downloadbuttonnew-case " tabindex="0" href="javascript:void(0);" target="_self" data-action="newResults.click|keydown" data-result-type="New">View</a>
+                    </div>
+                </div>
+            <div class="updatedresult">
+                    <div class="new-results text-style-1">
+                        <b class="updated-count" style="color: rgb(220, 11, 34);">2</b> <span class="updated-text" style="color: rgb(0, 0, 0);">Updated Result(s) </span>
+                    </div>
+                    <div class="download-button">
+                        <a class="downloadbuttonnew downloadbuttonnew-case " tabindex="0" href="https://results-service-api.ielts.org/api/organisation/1418/david.villegas/1740407619_7vNFPTbkS7JUV8EAr_0e0TgoBys=/download?format=&amp;templateId=e4a86d29-6153-499b-ac40-2c6aaf60ae5a&amp;noTag=false&amp;status=N&amp;emailId=" data-count-url="https://results-service-api.ielts.org/api/organisation/1418/download/info" target="_self" download="download" data-action="downloadUpdatedCandidates.click|keydown">Download</a>
+                    </div>
+                    <div class="view-button">
+                        <a class="downloadbuttonnew downloadbuttonnew-case " tabindex="0" href="javascript:void(0);" target="_self" data-action="updatedResults.click|keydown" data-result-type="Updated">View</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+XPATH para el boton download de nuevos resultados
+/html/body/main/div/div/div[2]/div[1]/div[2]/a
+
+
+XPATH para el boton download de updated resultados
+/html/body/main/div/div/div[2]/div[2]/div[2]/a
