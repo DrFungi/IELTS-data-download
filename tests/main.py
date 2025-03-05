@@ -1,9 +1,6 @@
 
 from drivers.driver_manager import Browser
 from pages.ielts_home import IeltsHome
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 from pages.ielts_results_service import IeltsResultsService
 
 #import os
@@ -23,6 +20,9 @@ ielts_home.click_on_login_link()
 ielts_home.wait_second_tab()
 ielts_home.switch_to_new_tab()
 ielts_results = IeltsResultsService(driver)
+ielts_results.insert_email()
+ielts_results.insert_password()
+ielts_results.click_on_login_button()
 results_title = ielts_results.get_title()
 
 

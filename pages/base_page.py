@@ -1,3 +1,4 @@
+from selenium.webdriver import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -32,8 +33,10 @@ class BasePage:
                 self.driver.switch_to.window(window_handle)
                 break
 
-    def insert_text(self):
-        pass
+    def insert_text(self, locator, text):
+        element = self.wait.until(EC.element_to_be_clickable(locator))
+        element.clear()
+        element.send_keys(text)
 
     def get_title(self):
         return self.driver.title
