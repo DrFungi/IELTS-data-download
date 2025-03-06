@@ -23,7 +23,9 @@ ielts_results = IeltsResultsService(driver)
 ielts_results.insert_email()
 ielts_results.insert_password()
 ielts_results.click_on_login_button()
+ielts_results.click_on_download_results()
 results_title = ielts_results.get_title()
+print(driver.title)
 
 
 ##### printing the title's page to name the files

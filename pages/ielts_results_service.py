@@ -12,6 +12,8 @@ class IeltsResultsService(BasePage):
     EMAIL_TEXTBOX = (By.NAME, "email")
     PASSWORD_TEXTBOX = (By.NAME, "password")
     LOGIN_BUTTON = (By.CLASS_NAME, "auth0-lock-submit")
+    DOWNLOAD_RESULTS_LINK = (By.LINK_TEXT, "Download Results")
+
 
     #### METHODS ####
     def __init__(self, driver):
@@ -25,3 +27,8 @@ class IeltsResultsService(BasePage):
 
     def click_on_login_button(self):
         self.click_element(*self.LOGIN_BUTTON)
+
+    def click_on_download_results(self):
+        self.click_element(*self.DOWNLOAD_RESULTS_LINK)
+
+
