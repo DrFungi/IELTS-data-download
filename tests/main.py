@@ -20,20 +20,24 @@ ielts_home.click_on_login_link()
 ielts_home.wait_second_tab()
 ielts_home.switch_to_new_tab()
 ielts_results = IeltsResultsService(driver)
+print(driver.title)
 ielts_results.insert_email()
 ielts_results.insert_password()
 ielts_results.click_on_login_button()
-ielts_results.click_on_download_results()
-results_title = ielts_results.get_title()
+print(driver.current_url)
 print(driver.title)
+ielts_results.click_on_download_results()
+print(driver.current_url)
+print(driver.title)
+results_title = ielts_results.get_title()
 
 
 ##### printing the title's page to name the files
 #second_page =ielts_home.get_title()
 #titulo = driver.title
 #print(original_tab)
-print(home_title)
-print(results_title)
+#print(home_title)
+#print(results_title)
 
 
 #input("press enter...")

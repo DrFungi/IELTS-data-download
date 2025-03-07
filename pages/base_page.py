@@ -14,6 +14,7 @@ class BasePage:
         self.driver.get(url)
 
     def click_element(self, by, value):
+        self.wait.until(EC.presence_of_element_located((by, value))) ##### Ojo esta es la linea que adicione
         element = self.wait.until(EC.element_to_be_clickable((by, value)))
         element.click()
 
