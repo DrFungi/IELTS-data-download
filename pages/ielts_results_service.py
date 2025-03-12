@@ -1,3 +1,4 @@
+
 from selenium.webdriver.common.by import By
 from  pages.base_page import BasePage
 import utils.env as credentials
@@ -34,6 +35,10 @@ class IeltsResultsService(BasePage):
         time.sleep(5)
         self.click_element(*self.DOWNLOAD_RESULTS_LINK)
         time.sleep(5)
-        #print("I was able to click")
 
+    def try_click_new_results_button(self):
+        pass
+
+    def try_click_updated_results_button(self):
+        pass
 
