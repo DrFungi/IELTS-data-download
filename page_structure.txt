@@ -700,3 +700,80 @@ XPATH para el boton download de nuevos resultados
 
 XPATH para el boton download de updated resultados
 /html/body/main/div/div/div[2]/div[2]/div[2]/a
+
+
+########################################################
+
+estructura del scroll list para bajar el archivo
+PILAS antes de este elemento hay un IFRAME que puede afectar
+
+xpath: //*[@id="templateId"]
+
+elemento:
+<select id="templateId" class="field-control-select" data-action="changeTemplate.change">
+                    <option value="NO_SELECTION" format="CSV">Please select</option>
+
+                    <option value="576de23d-72f8-41f5-9197-266c4818767a" format="CSV">Countries</option><option value="15690c5a-c139-40e3-9628-540b69cc2cab" format="CSV">McGill 2023 new</option><option value="e948221a-b49e-4cd9-bef1-6995416edde3" format="CSV">McGill 2025 IELTS</option><option value="71d8648f-2792-40da-920c-3a720fdbec37" format="CSV">McGill CSV (June 2020)</option><option value="c5c3cbd6-6001-4261-be2a-f242dd43a4d5" format="CSV">McGill CSV (June 2020) (copy)</option><option value="1678715c-c2b6-11e7-abc4-cec278b6b50a" format="CSV">Default CSV</option><option value="167873be-c2b6-11e7-abc4-cec278b6b50a" format="XML">Default XML</option><option value="167874b8-c2b6-11e7-abc4-cec278b6b50a" format="JSON">Default JSON</option><option value="be8763c4-fabc-44bd-8790-68b4a2629571" format="CSV">Legacy IELTS Download Template</option><option value="b57415a5-f39d-44ed-816d-3f037d4e0080" format="CSV">Legacy IELTS UKVI Download Template</option>
+                </select>
+
+<option value="be8763c4-fabc-44bd-8790-68b4a2629571" format="CSV">Legacy IELTS Download Template</option>
+
+
+########## este es el boton (link) de download #################
+
+<a href="#" class="dialog-button dialog-button-download">Download</a>
+
+####### este es el iframe arriba del popup
+
+<iframe allow="join-ad-interest-group" data-tagging-id="G-P9NGGY0TS4" data-load-time="1741890806431" height="0" width="0" src="https://td.doubleclick.net/td/ga/rul?tid=G-P9NGGY0TS4&amp;gacid=38832848.1741890703&amp;gtm=45je53c0v9123934069za200&amp;dma=0&amp;gcd=13l3l3l3l2l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=102482433~102587591~102640600~102717422~102788824~102791784~102814059~102825837&amp;z=1610238156" style="display: none; visibility: hidden;"></iframe>
+<div class="notifier_container_styles"></div>
+<div class="dialog-mask confirm-mask" data-dialog-visible="true"><div id="confirm" class="dialog dialog-confirm dialog-new-candidates dialog-autoshow" style="[object Object]" tabindex="-1"><span class="dialog-close">×</span><h1 class="dialog-title">Download</h1><div class="dialog-body"><div class="row template-name">
+            <div class="field-label">
+                Template Name
+            </div>
+            <div class="select-wrapper">
+                <select id="templateId" class="field-control-select" data-action="changeTemplate.change">
+                    <option value="NO_SELECTION" format="CSV">Please select</option>
+
+                    <option value="576de23d-72f8-41f5-9197-266c4818767a" format="CSV">Countries</option><option value="15690c5a-c139-40e3-9628-540b69cc2cab" format="CSV">McGill 2023 new</option><option value="e948221a-b49e-4cd9-bef1-6995416edde3" format="CSV">McGill 2025 IELTS</option><option value="71d8648f-2792-40da-920c-3a720fdbec37" format="CSV">McGill CSV (June 2020)</option><option value="c5c3cbd6-6001-4261-be2a-f242dd43a4d5" format="CSV">McGill CSV (June 2020) (copy)</option><option value="1678715c-c2b6-11e7-abc4-cec278b6b50a" format="CSV">Default CSV</option><option value="167873be-c2b6-11e7-abc4-cec278b6b50a" format="XML">Default XML</option><option value="167874b8-c2b6-11e7-abc4-cec278b6b50a" format="JSON">Default JSON</option><option value="be8763c4-fabc-44bd-8790-68b4a2629571" format="CSV"> IELTS Download Template</option><option value="b57415a5-f39d-44ed-816d-3f037d4e0080" format="CSV">Legacy IELTS UKVI Download Template</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field-label">
+                Download Format
+            </div>
+            <select id="formatId" class="field-control-select">
+                <option value="CSV">CSV</option>
+                <option value="XML">XML</option>
+                <option value="JSON">JSON</option>
+            </select>
+        </div>
+        <span class="loading-message"></span></div><div class="dialog-buttons"><a href="#" class="dialog-button dialog-button-cancel">Cancel</a><a href="#" class="dialog-button dialog-button-download">Download</a></div></div></div>
+####### este es el popup del download
+
+<div id="confirm" class="dialog dialog-confirm dialog-new-candidates dialog-autoshow" style="[object Object]" tabindex="-1"><span class="dialog-close">×</span><h1 class="dialog-title">Download</h1><div class="dialog-body"><div class="row template-name">
+            <div class="field-label">
+                Template Name
+            </div>
+            <div class="select-wrapper">
+                <select id="templateId" class="field-control-select" data-action="changeTemplate.change">
+                    <option value="NO_SELECTION" format="CSV">Please select</option>
+
+                    <option value="576de23d-72f8-41f5-9197-266c4818767a" format="CSV">Countries</option><option value="15690c5a-c139-40e3-9628-540b69cc2cab" format="CSV">McGill 2023 new</option><option value="e948221a-b49e-4cd9-bef1-6995416edde3" format="CSV">McGill 2025 IELTS</option><option value="71d8648f-2792-40da-920c-3a720fdbec37" format="CSV">McGill CSV (June 2020)</option><option value="c5c3cbd6-6001-4261-be2a-f242dd43a4d5" format="CSV">McGill CSV (June 2020) (copy)</option><option value="1678715c-c2b6-11e7-abc4-cec278b6b50a" format="CSV">Default CSV</option><option value="167873be-c2b6-11e7-abc4-cec278b6b50a" format="XML">Default XML</option><option value="167874b8-c2b6-11e7-abc4-cec278b6b50a" format="JSON">Default JSON</option><option value="be8763c4-fabc-44bd-8790-68b4a2629571" format="CSV">Legacy IELTS Download Template</option><option value="b57415a5-f39d-44ed-816d-3f037d4e0080" format="CSV">Legacy IELTS UKVI Download Template</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field-label">
+                Download Format
+            </div>
+            <select id="formatId" class="field-control-select">
+                <option value="CSV">CSV</option>
+                <option value="XML">XML</option>
+                <option value="JSON">JSON</option>
+            </select>
+        </div>
+        <span class="loading-message"></span></div><div class="dialog-buttons"><a href="#" class="dialog-button dialog-button-cancel">Cancel</a><a href="#" class="dialog-button dialog-button-download">Download</a></div></div>

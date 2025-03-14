@@ -36,9 +36,22 @@ class IeltsResultsService(BasePage):
         self.click_element(*self.DOWNLOAD_RESULTS_LINK)
         time.sleep(5)
 
+    def is_element_present(self, locator):
+        elements = self.driver.find_elements(*locator)
+        return len(elements) > 0
+
     def try_click_new_results_button(self):
-        pass
+        if self.is_element_present(self.NEW_RESULTS_BUTTON):  ##### this function returns true if the element is found ####
+            self.click_element(*self.NEW_RESULTS_BUTTON)
+            print("Clicked on new results button")
+        else:
+            print("No new results available for download")
 
     def try_click_updated_results_button(self):
-        pass
+        if self.is_element_present(self.UPDATED_RESULTS_BUTTON):  ##### this function returns true if the element is found ####
+            self.click_element(*self.UPDATED_RESULTS_BUTTON)
+            print("Clicked on updated results button")
+        else:
+            print("No updated results available for download")
+
 

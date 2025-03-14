@@ -6,7 +6,7 @@ class DownloadScheduler:
     def __init__(self, results_page: IeltsResultsService):
         self.results_page = results_page
 
-    def download_results(self):
+    def download_results_button(self):
         day = datetime.date.today().strftime('%A') # This gets the current day as string
 
         if day in ["Monday", "Wednesday"]:

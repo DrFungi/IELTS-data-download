@@ -1,8 +1,12 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 from drivers.driver_manager import Browser
 from pages.ielts_home import IeltsHome
 from pages.ielts_results_service import IeltsResultsService
+from utils.download_scheduler import DownloadScheduler
 
 #import os
 
@@ -39,12 +43,31 @@ ielts_results.click_on_download_results()
 print(driver.current_url)
 print(driver.title)
 
+##### Espacio de test para bajar el archivo #####
+ielts_results.try_click_new_results_button()
+
+wait = WebDriverWait(driver,10)
+wait.until(EC.visibility_of_element_located((By.ID, "templateId")))
+dropdown = Select(driver.find_element(By.ID, "templateId"))
+dropdown.select_by_visible_text("Legacy IELTS Download Template")
+
+### Download the file
+download_button = driver.find_element(By.CLASS_NAME, "dialog-button-download")
+download_button.click()
+
+
+##### Clicking in one of the download buttons
+#scheduler = DownloadScheduler(ielts_results)
+#scheduler.download_results_button()
+
+###### From here will be used for development and should be deleted at the end of the project #######
+'''
 download_new_results = driver.find_elements(By.XPATH, "//div[@class='newresult']//a[contains(@data-action, 'downloadNewCandidates')]")
 if download_new_results:
     print("element present")
 else:
     print("element absent")
-download_updated_results = driver.find_elements(By.XPATH, "//div[@class='updatedresult']//a[contains(@data-action, 'downloadNewCandidates')]")
+download_updated_results = driver.find_elements(By.XPATH, "//div[@class='updatedresult']//a[contains(@data-action, 'downloadUpdatedCandidates')]")
 if download_updated_results:
     print("element present")
 else:
@@ -55,7 +78,6 @@ else:
 #print(original_tab)
 #print(home_title)
 #print(results_title)
-
-
-#input("press enter...")
+input("press enter...")
 #driver.quit()
+'''
