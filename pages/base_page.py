@@ -1,6 +1,7 @@
 from selenium.webdriver import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select
 
 class BasePage:
     ##### Parent class for all other pages #####
@@ -34,10 +35,15 @@ class BasePage:
                 self.driver.switch_to.window(window_handle)
                 break
 
-    def insert_text(self, locator, text):
-        element = self.wait.until(EC.element_to_be_clickable(locator))
+    def insert_text(self, by,locator, text):
+        element = self.wait.until(EC.element_to_be_clickable((by,locator)))
         element.clear()
         element.send_keys(text)
+
+    def select_template(self, by, template_locator, template_text):
+        self.wait.until(EC.visibility_of_element_located((by, template_locator)))
+        dropdown = Select(self.driver.find_element(by, template_locator))
+        dropdown.select_by_visible_text(template_text)
 
     def get_title(self):
         return self.driver.title
