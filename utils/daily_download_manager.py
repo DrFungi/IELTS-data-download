@@ -9,21 +9,28 @@ class FileHandler:
 
     def __init__(self):
         ##### Paths to the folders
-        self.download_folder = credentials.ORIGINAL_FOLDER #r"C:\Users\dville\Downloads"
+        self.download_folder = credentials.ORIGINAL_FOLDER
         self.destination_folders = [
-            r"C:\Users\dville\Documents",
-            r"C:\Users\dville\Documents\Tests",
             credentials.DOC_CENTRE,
-            credentials.SEDNA
+            #credentials.SEDNA  I am commenting the drive until I am sure it works properly
         ]
 
-    ##### wait for the file to appear in the folder
-    def wait_for_file(self, prefix="IELTS-download-"):
-        for _ in range(30):
-            file = sorted([f for f in os.listdir(self.download_folder) if f.startswith(prefix)], reverse=True)
-            if file:
-                return file[0] # returns the most recent file
+    ##### wait for the latest file to appear in the folder
+    def wait_for_file(self, prefix="IELTS-download-", timeout=20):
+        start_time = time.time()
+
+        while time.time() - start_time > timeout:
+            files = []
+            for f in os.listdir(self.download_folder):
+                if f.startswith(prefix) and f.endswith(".csv"):
+                    full_path = os.path.join(self.download_folder, f)
+                    files.append(full_path)
+
+            if files:
+                latest_file = max(files, key=os.path.getctime) ### preguntar si aqui hay que poner parentesis
+                return latest_file
             time.sleep(1)
+
         return None
 
     ##### Find the latest file
@@ -42,15 +49,17 @@ class FileHandler:
             today_string = datetime.today().strftime("%Y%m%d")
             new_file_name = f"IELTS_{today_string}{file_extension}"
 
-            #### Full path of original nama
-            original_path = os.path.join(self.download_folder, latest_file)
+            ##### Rename and move the file
+            new_file_path = os.path.join(self.download_folder, new_file_name)
+            shutil.move(latest_file, new_file_path)
 
-            #### Move and rename the file for both destinations
+            ##### Copy to destination folders
             for dest_folder in self.destination_folders:
-                new_path = os.path.join(dest_folder,new_file_name)
-                shutil.copy(original_path, new_path)
-                print(f"File copied to: {new_path}")
+                dest_path = os.path.join(dest_folder, new_file_name)
+                shutil.copy(new_file_path, dest_path)
+                print(f"file {new_file_name}, copied to {dest_path}")
 
             ##### Optional Remove file
+            #shutil.move(latest_file, new_file_name)
             #os.remove(original_path)
-            #print("Original file deleted.")
+            #print(f"Original file {latest_file}. renamed as {new_file_name}")
