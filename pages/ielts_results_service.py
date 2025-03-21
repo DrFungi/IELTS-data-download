@@ -46,26 +46,20 @@ class IeltsResultsService(BasePage):
         elements = self.driver.find_elements(*locator)
         return len(elements) > 0
 
-    def try_click_results_button(self, results_button):
+    ##### This function accepts two arguments: results button which is the button to
+    ##### download the results themselves and a results variable which stores the text
+    ##### to be displayed in the console
+    def try_click_results_button(self, results_button, results):
         if self.is_element_present(results_button):  ##### this function returns true if the element is found ####
             self.click_element(*results_button)
             self.select_template(*self.TEMPLATE_SCROLLBAR, self.TEXT_OF_DOWNLOAD_TEMPLATE)
             self.click_element(*self.FINAL_DOWNLOAD_HYPERLINK)
             file_handler = FileHandler()
             file_handler.handle_file()
-            print("Clicked on new results button")
+            print(f"Clicked on {results} results button")
         else:
-            print("No new results available for download")
+            print(f"No {results} results available for download")
 
-    def try_click_updated_results_button(self):
-        if self.is_element_present(self.UPDATED_RESULTS_BUTTON):  ##### this function returns true if the element is found ####
-            self.click_element(*self.UPDATED_RESULTS_BUTTON)
-            self.select_template(*self.TEMPLATE_SCROLLBAR, self.TEXT_OF_DOWNLOAD_TEMPLATE)
-            self.click_element(*self.FINAL_DOWNLOAD_HYPERLINK)
-            self.handle_downloaded_file()
-            print("Clicked on updated results button")
-        else:
-            print("No updated results available for download")
 
     ##### This function selects the specific template to download by sending umpacking the tupple TEMPLATESCROLLBAR
     ##### and effectively sending 3 arguments to select_template

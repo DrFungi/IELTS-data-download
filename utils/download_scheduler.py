@@ -12,9 +12,9 @@ class DownloadScheduler:
         day = datetime.date.today().strftime('%A') # This gets the current day as string
 
         if day in ["Monday", "Wednesday"]:
-            self.ielts_results.try_click_results_button(self.ielts_results.NEW_RESULTS_BUTTON)
+            self.ielts_results.try_click_results_button(self.ielts_results.NEW_RESULTS_BUTTON, results="new")
         elif day in ["Tuesday", "Thursday"]:
-            self.ielts_results.try_click_results_button(self.ielts_results.UPDATED_RESULTS_BUTTON)
+            self.ielts_results.try_click_results_button(self.ielts_results.UPDATED_RESULTS_BUTTON, results="updated")
             #self.ielts_results.try_click_updated_results_button()
         else:
             print("No downloads scheduled for today.")

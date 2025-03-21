@@ -32,17 +32,17 @@ ielts_home.switch_to_new_tab()
 
 ##### Entering credentials #####
 ielts_results = IeltsResultsService(driver)
-print(driver.title)
+#print(driver.title)
 ielts_results.insert_email()
 ielts_results.insert_password()
 ielts_results.click_on_login_button()
-print(driver.current_url)
-print(driver.title)
+#print(driver.current_url)
+#print(driver.title)
 
 ##### Entering the Download page for the second time #####
 ielts_results.click_on_download_results()
-print(driver.current_url)
-print(driver.title)
+#print(driver.current_url)
+#print(driver.title)
 
 
 ##### Clicking in one of the download buttons and downloading the file
