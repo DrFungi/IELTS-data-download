@@ -1,12 +1,7 @@
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 from drivers.driver_manager import Browser
 from pages.ielts_home import IeltsHome
 from pages.ielts_results_service import IeltsResultsService
-from utils.daily_download_manager import FileHandler
 from utils.download_scheduler import DownloadScheduler
 
 #import os

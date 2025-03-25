@@ -12,14 +12,14 @@ class FileHandler:
         self.download_folder = credentials.ORIGINAL_FOLDER
         self.destination_folders = [
             credentials.DOC_CENTRE,
-            #credentials.SEDNA  I am commenting the drive until I am sure it works properly
+            credentials.SEDNA
         ]
 
     ##### wait for the latest file to appear in the folder
     def wait_for_file(self, prefix="IELTS-download-", timeout=20):
         start_time = time.time()
 
-        while time.time() - start_time > timeout:
+        while time.time() - start_time < timeout:
             files = []
             for f in os.listdir(self.download_folder):
                 if f.startswith(prefix) and f.endswith(".csv"):
