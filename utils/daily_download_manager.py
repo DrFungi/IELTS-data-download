@@ -12,7 +12,8 @@ class FileHandler:
         self.download_folder = credentials.ORIGINAL_FOLDER
         self.destination_folders = [
             credentials.DOC_CENTRE,
-            credentials.SEDNA
+            credentials.SEDNA,
+            #credentials.TEST_FOLDER
         ]
 
     ##### wait for the latest file to appear in the folder

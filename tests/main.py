@@ -8,7 +8,7 @@ from utils.download_scheduler import DownloadScheduler
 
 
 ##### Initialize the browser #####
-browser = Browser(headless=False) #constructor options for headless or browser come here. ex. headless=True
+browser = Browser(headless=True) #constructor options for headless or browser come here. ex. headless=True
 driver = browser.get_driver()
 
 ##### Entering the IELTS portal #####
@@ -43,6 +43,8 @@ ielts_results.click_on_download_results()
 ##### Clicking in one of the download buttons and downloading the file
 scheduler = DownloadScheduler(ielts_results)
 scheduler.download_results_button()
+
+browser.close_driver()
 
 ##### Selecting and downloading the file
 #ielts_results.select_IELTS_template()

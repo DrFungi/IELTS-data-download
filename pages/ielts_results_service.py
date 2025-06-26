@@ -18,8 +18,9 @@ class IeltsResultsService(BasePage):
     PASSWORD_TEXTBOX = (By.NAME, "password")
     LOGIN_BUTTON = (By.CLASS_NAME, "auth0-lock-submit")
     DOWNLOAD_RESULTS_LINK = (By.LINK_TEXT, "Download Results")
-    NEW_RESULTS_BUTTON = (By.XPATH, "//div[@class='newresult']//a[contains(@data-action, 'downloadNewCandidates')]")
-    UPDATED_RESULTS_BUTTON = (By.XPATH, "//div[@class='updatedresult']//a[contains(@data-action, 'downloadUpdatedCandidates')]")
+    NEW_RESULTS_BUTTON = (By.XPATH, "//div[@class='new-results']//button[contains(text(), 'Download')]")
+    UPDATED_RESULTS_BUTTON = (By.XPATH, "//div[@class='updated-results']//button[contains(text(),'Download')]")
+
     TEMPLATE_SCROLLBAR = (By.ID, "templateId")
     TEXT_OF_DOWNLOAD_TEMPLATE = "Legacy IELTS Download Template"
     FINAL_DOWNLOAD_HYPERLINK = (By.CLASS_NAME, "dialog-button-download")
@@ -51,6 +52,11 @@ class IeltsResultsService(BasePage):
     ##### to be displayed in the console
     def try_click_results_button(self, results_button, results):
         if self.is_element_present(results_button):  ##### this function returns true if the element is found ####
+            button_element = self.driver.find_element(*results_button)
+            ### check if the button is disabled
+            if "disabled" in button_element.get_attribute("class"):
+                print(f"No {results} results available - button is disabled")
+                return #exit program
             self.click_element(*results_button)
             self.select_template(*self.TEMPLATE_SCROLLBAR, self.TEXT_OF_DOWNLOAD_TEMPLATE)
             self.click_element(*self.FINAL_DOWNLOAD_HYPERLINK)

@@ -6,7 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 class Browser:
-    def __init__(self, headless=False, browser="chrome"):
+    def __init__(self, headless, browser="chrome"):
         if browser == "chrome":
             # Create an options object to customize browser settings
             options = Options()
